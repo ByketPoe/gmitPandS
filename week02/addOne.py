@@ -9,4 +9,4 @@ number = int(input("Enter a number: "))
 addOne = number + 1
 
 # Print the result
-print(addOne)
+print('{} plus one is {}'.format(number, addOne))
