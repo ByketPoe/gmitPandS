@@ -17,4 +17,4 @@ maxNumber = int(input("Please enter the range maximum: "))
 number = random.randint(minNumber, maxNumber)
 
 # The result is printed.
-print("here is a random number between {} and {} : {}".format(minNumber, maxNumber, number))
+print("Here is a random number between {} and {} : {}".format(minNumber, maxNumber, number))
