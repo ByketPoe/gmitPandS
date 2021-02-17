@@ -1,5 +1,5 @@
 # randomFruit.py
-# The purpose of this program is to print a random fruit name.
+# The purpose of this program is to print a random fruit name from a list of fruits.
 # author: Emma Farrell
 
 # The random module is imported.
@@ -12,7 +12,7 @@ fruits = ['Apple', 'Orange', 'Banana', 'Pear']
 # The randint() function is used to generate a number between 0 and the length of the fruits list minus 1.
 # List indexes start at 0, therefore the last list item will have an index of the length of the list minus 1.
 # The result is assigned to a variable. 
-# The number generate will be used as the index of the fruits list to choose the fruit.
+# The number generated will be used as the index of the fruits list to choose the fruit.
 index = random.randint(0, len(fruits)-1)
 
 # The string at list position "index" of the fruits list is assigned to the variable "fruit".
