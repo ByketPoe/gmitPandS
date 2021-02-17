@@ -11,7 +11,7 @@ divisor = int(input("Enter the number you want to divide by: "))
 # The numerator is divided by the divisor using the // operator.
 # // provides an integer answer by rounding the result down. 
 # The result is assigned to the variable answer.
-answer = numerator // divisor
+answer = numerator // divisor # In the lab notes, this was cast to an int, but I see no reason to do so when the dividing operator alreadys rounds the number
 
 # The remainder is calculated by using the modulus operator %
 # The result of this is assigned to the variable remainder.
