@@ -20,3 +20,7 @@ fruit = fruits[index]
 
 # The result is printed. 
 print('A Random Fruit: {}'.format(fruit))
+
+# Using the choices function from the random module instead to find the random fruit.
+# The argument k defines the length of the returned list. 
+print('Another random fruit: {}'.format(random.choices(fruits, k=1)))
