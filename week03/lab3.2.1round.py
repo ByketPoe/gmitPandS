@@ -8,7 +8,7 @@
 numberToRound = float(input("Enter a number of type float: "))
 
 # The round() function is used to round the input number. 
-# The Result is assigned to the variable "roundedNumber".
+# The result is assigned to the variable "roundedNumber".
 roundedNumber = round(numberToRound)
 
 # The result is printed using .format() and print(). 

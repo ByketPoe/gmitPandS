@@ -7,8 +7,8 @@
 # This is cast to a float and assigned to a variable "numberRaw".
 numberRaw = float(input("Enter a number: "))
 
-# The round() function is used to round the input number. 
-# The Result is assigned to the variable "roundedNumber".
+# The abs() function is used to get the absolute value of the input number.
+# The result is assigned to the variable "numberAbsoluteValue".
 numberAbsoluteValue = abs(numberRaw)
 
 # The result is printed using .format() and print(). 
