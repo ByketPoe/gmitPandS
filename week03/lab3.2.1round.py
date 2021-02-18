@@ -11,5 +11,5 @@ numberToRound = float(input("Enter a number of type float: "))
 # The Result is assigned to the variable "roundedNumber".
 roundedNumber = round(numberToRound)
 
-# The rsult is printed using .format() and print(). 
+# The result is printed using .format() and print(). 
 print('{} rounded is {}'.format(numberToRound, roundedNumber))
