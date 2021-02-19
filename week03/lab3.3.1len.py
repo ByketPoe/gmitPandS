@@ -13,4 +13,4 @@ inputString = input('Please enter some text: ')
 lengthOfString = len(inputString)
 
 # The result is printed using .format() and print() functions.
-print('The length of {} is {}'.format(inputString, lengthOfString))
+print('The length of "{}" is {}'.format(inputString, lengthOfString))
