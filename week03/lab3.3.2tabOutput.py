@@ -1,5 +1,5 @@
 # tabOutput.py
-# The purpose of this program is to deonstrate tab spaces in output strings.
+# The purpose of this program is to deonstrate tab spaces and new lines in output strings.
 # author: Emma Farrell
 
 # Within a string, \t creates a space similar to hitting tab on the keyboard.
