@@ -1,5 +1,5 @@
 # queue.py
-# The purpose of this program is to 
+# The purpose of this program is to create and display a queue and show the progress of the queue as it moves through the system.
 # author: Emma Farrell
 
 # The random module is imported.
