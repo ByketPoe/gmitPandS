@@ -1,0 +1,17 @@
+a. numberOfQuestions                        = integer
+b. averageAge                               = float
+c. debugMode                                = boolean
+d. name                                     = string
+e. ages                                     = list
+f. months                                   = tuple
+g. months[1]                                = string
+h. book                                     = dictionary
+i. stuff                                    = list
+j. stuff[2]                                 = boolean
+k. someone                                  = dictionary
+l. someone["firstname"]                     = string
+m. me                                       = dictionary
+n. me["teaching"]                           = list
+o. me["teaching"][0]["semester"]            = int
+p is a trick question look at it carefully   
+p. me["teaching"][0]["coursename"]          = does not exist, the name of the key is courseName
