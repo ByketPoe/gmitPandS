@@ -1,0 +1,6 @@
+a. What will be printed out when this program is run?
+    Nothing will be printed because the print function isn't used, both in the yo() function and in the main code.
+b. What would you have to add to the program to get it to print out what the calling the function yo(3) returns?
+    Assuming this is to be added to the main program, the invocation of yo(3) would need to be wrapped in a print function. 
+    Alternatively, the result can be passed to a variable (result = yo(3)) and the variable can be printed (print(result)).
+    Alternatively again, the print function can be used within the yo() function (print(a*2))
