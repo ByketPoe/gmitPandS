@@ -4,19 +4,37 @@ def displayMenu():
 
     return choice
 
-def doAdd():
-    # do stuff
-    print("In Adding")
+def readModules():
+    modules = []
+    moduleName = input("\tEnter the first Module name (blank to quit): ").strip()
+    while moduleName != "":
+        module = {}
+        module["name"] = moduleName
+        module["grade"] = int(input("\t\tEnter grade: "))
+        modules.append(module)
+        moduleName = input("\tEnter the next module name (blank to quit): ").strip()
+
+    return modules
+
+def doAdd(students):
+    currentStudent = {}
+    currentStudent["name"] = input("enter name: ")
+    currentStudent["modules"] = readModules()
+
+    students.append(currentStudent)
 
 def doView():
     # do stuff
     print("In Viewing")
 
+
+
 # Main Program
+student_list = []
 choice = displayMenu()
-while (choice != "q"):
+while choice != "q":
     if choice == "a":
-        doAdd()
+        doAdd(student_list)
     elif choice == "v":
         doView()
     elif choice != "q":
@@ -25,3 +43,4 @@ while (choice != "q"):
     choice = displayMenu()
     
 print("You chose {}".format(choice))
+print(student_list)
