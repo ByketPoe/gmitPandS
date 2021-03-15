@@ -32,18 +32,21 @@ def doView(students):
         print(currentStudent["name"])
         displayModules(currentStudent["modules"])
 
+def doNothing(dummyVariable):
+    pass
 
+choiceMap = {'a': doAdd, 'v': doView, 'q': doNothing}
 
 # Main Program
 student_list = []
 choice = displayMenu()
 while choice != "q":
-    if choice == "a":
-        doAdd(student_list)
-    elif choice == "v":
-        doView(student_list)
-    elif choice != "q":
+    if choice in choiceMap:
+        choiceMap[choice](student_list)
+    else:
         print("\n\nPlease select either a, v, or q")
     print("You chose {}".format(choice))
     choice = displayMenu()
     
+print("You chose {}".format(choice))
+print(student_list)
