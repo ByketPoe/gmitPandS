@@ -20,12 +20,17 @@ def doAdd(students):
     currentStudent = {}
     currentStudent["name"] = input("enter name: ")
     currentStudent["modules"] = readModules()
-
     students.append(currentStudent)
 
-def doView():
-    # do stuff
-    print("In Viewing")
+def displayModules(modules):
+    print("\tName \tGrade")
+    for module in modules:
+        print("\t{} \t{}".format(module["name"], module["grade"]))
+
+def doView(students):
+    for currentStudent in students:
+        print(currentStudent["name"])
+        displayModules(currentStudent["modules"])
 
 
 
@@ -36,7 +41,7 @@ while choice != "q":
     if choice == "a":
         doAdd(student_list)
     elif choice == "v":
-        doView()
+        doView(student_list)
     elif choice != "q":
         print("\n\nPlease select either a, v, or q")
     print("You chose {}".format(choice))
