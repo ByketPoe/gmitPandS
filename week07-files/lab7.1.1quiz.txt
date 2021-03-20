@@ -1,5 +1,5 @@
 a. The program will try to read a file called "test-a.txt", because the default mode is read mode. Because "test-a" does not exist, an error will appear in the terminal stating that the file does not exist.
-b. An error will not be output to the console becuase in write mode, the file will be created automatically. Instead, the count of characters in the text file will be output.
+b. An error will not be output to the console becuase in write mode, the file will be created automatically. Instead, the count of characters in the text file will be output, in this case 7 and 13.
 c. The contents will be "another line" with a new line at the end. This is because the second statement that is executed overwrites the first statement.
 d. The contents will be "test d" with "another line" on a new line followed by another new line. 
 This is because the second file opening statement opens the file in append mode instead of write mode, so anything written to the file is added to what is existing rather than overwriting.
