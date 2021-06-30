@@ -17,3 +17,17 @@ df.index.name = 'Name'
 print(df)
 print(df.describe())
 print(type(df.describe()))
+
+path = "./data/" # need to create the directory first, df.to_csv creates files but not directories
+csvFilename = path + "grades.csv"
+df.to_csv(csvFilename)
+
+excelFilename = path + "grades.xlsx"
+df.to_excel(excelFilename, index=False, sheet_name="data") # index=False removes index column
+
+with pd.ExcelWriter(excelFilename, engine="openpyxl", mode="a") as writer:
+    df.describe().to_excel(writer, sheet_name="summary")
+
+# mean = df.describe().loc["mean", "Grade"]
+mean = df["Grade"].mean()
+print(mean)
